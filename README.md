@@ -1,5 +1,4 @@
-
-*<img width="1366" height="768" alt="Design ohne Titel" src="https://github.com/user-attachments/assets/f1485760-e581-4997-b5d9-6584a3d873ab" />*
+*<img width="1366" height="768" alt="1" src="https://github.com/user-attachments/assets/448e19cb-66f6-4ee3-9a8a-a62c8d48270f" />*
 
 # Hello World!
 
