@@ -1,13 +1,13 @@
 
 *![smartsheet-logo-1260x709](https://github.com/user-attachments/assets/3b2172a3-6190-49d7-bcde-59361a2a684f)*
 
+Hello World !
+Dieses Repository dokumentiert ein End-to-End-Projekt im Bereich Workforce Operations & People Analytics, das ich im Rahmen eines MSP-Programms für ein deutsches Telekommunikationsunternehmen im Q2 2025 umgesetzt habe. Ziel war es, ein zentrales SmartSheet-Dashboard aufzubauen, das Anfragen, Aufträge, Verlängerungen, Workload, Zeitaufwand, Skills und Team-Stimmung für ein nicht-technisches Team aus 5 MSP Consultants, 1 Operations Manager und 1 Account Director sichtbar macht.
 
-Willkommen!  
-Dieses Repository dokumentiert ein End-to-End-Projekt im Bereich **Workforce Operations & People Analytics**, das ich im Rahmen eines MSP-Programms für ein deutsches Telekommunikationsunternehmen im Q2 2025 umgesetzt habe. Ziel war es, ein **zentrales SmartSheet-Dashboard** aufzubauen, das Anfragen, Aufträge, Verlängerungen, Workload, Zeitaufwand, Skills und Team-Stimmung für ein **nicht-technisches Team aus 5 MSP Consultants, 1 Operations Manager und 1 Account Director** sichtbar macht.
+Alle im Repository gezeigten Screenshots und Visualisierungen wurden vollständig anonymisiert, um den Datenschutz zu gewährleisten. Kundennamen, personenbezogene Daten sowie individuelle Team- oder Projektinformationen wurden entfernt oder durch neutrale Platzhalter ersetzt.
 
-Ziel des Projekts ist es, **Kapazitäten und Engpässe im Team transparent zu machen**, **SLA-Risiken frühzeitig zu erkennen** und dem Management eine Grundlage für **datenbasierte Entscheidungen** über Ressourceneinsatz, Priorisierung und Prozessoptimierung zu liefern.  
-Langfristig soll die in diesem Projekt entwickelte Struktur als **Blaupause** dienen, die auf weitere MSP- und Recruiting-Setups – für andere Kunden und Teams – übertragen und dort wiederverwendet werden kann.
-
+Ziel des Projekts ist es, Kapazitäten und Engpässe im Team transparent zu machen, SLA-Risiken frühzeitig zu erkennen und dem Management eine Grundlage für datenbasierte Entscheidungen über Ressourceneinsatz, Priorisierung und Prozessoptimierung zu liefern.
+Langfristig soll die in diesem Projekt entwickelte Struktur als Blaupause dienen, die auf weitere MSP- und Recruiting-Setups – für andere Kunden und Teams – übertragen und wiederverwendet werden kann.
 
 ---
 
