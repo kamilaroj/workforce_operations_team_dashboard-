@@ -1,13 +1,16 @@
 
-*![smartsheet-logo-1260x709](https://github.com/user-attachments/assets/3b2172a3-6190-49d7-bcde-59361a2a684f)*
+*<img width="1366" height="768" alt="Design ohne Titel" src="https://github.com/user-attachments/assets/f1485760-e581-4997-b5d9-6584a3d873ab" />*
 
-Hello World !
-Dieses Repository dokumentiert ein End-to-End-Projekt im Bereich Workforce Operations & People Analytics, das ich im Rahmen eines MSP-Programms für ein deutsches Telekommunikationsunternehmen im Q2 2025 umgesetzt habe. Ziel war es, ein zentrales SmartSheet-Dashboard aufzubauen, das Anfragen, Aufträge, Verlängerungen, Workload, Zeitaufwand, Skills und Team-Stimmung für ein nicht-technisches Team aus 5 MSP Consultants, 1 Operations Manager und 1 Account Director sichtbar macht.
+# Hello World!
 
-Alle im Repository gezeigten Screenshots und Visualisierungen wurden vollständig anonymisiert, um den Datenschutz zu gewährleisten. Kundennamen, personenbezogene Daten sowie individuelle Team- oder Projektinformationen wurden entfernt oder durch neutrale Platzhalter ersetzt.
+Dieses Repository dokumentiert ein End-to-End-Projekt im Bereich **Workforce Operations & People Analytics**, das ich im Rahmen eines MSP-Programms für ein deutsches Telekommunikationsunternehmen im **Q2 2025** umgesetzt habe. Ziel war es, ein zentrales **SmartSheet-Dashboard** aufzubauen, das **Anfragen, Aufträge, Verlängerungen, Workload, Zeitaufwand, Skills und Team-Stimmung** für ein nicht-technisches Team aus 5 MSP Consultants, 1 Operations Manager und 1 Account Director sichtbar macht.
 
-Ziel des Projekts ist es, Kapazitäten und Engpässe im Team transparent zu machen, SLA-Risiken frühzeitig zu erkennen und dem Management eine Grundlage für datenbasierte Entscheidungen über Ressourceneinsatz, Priorisierung und Prozessoptimierung zu liefern.
-Langfristig soll die in diesem Projekt entwickelte Struktur als Blaupause dienen, die auf weitere MSP- und Recruiting-Setups – für andere Kunden und Teams – übertragen und wiederverwendet werden kann.
+**Hinweis zum Datenschutz:**  
+Alle im Repository gezeigten **Screenshots und Visualisierungen wurden vollständig anonymisiert**, um vertrauliche Informationen zu schützen. Kundennamen, personenbezogene Daten sowie individuelle Team- oder Projektinformationen wurden entfernt oder durch neutrale Platzhalter ersetzt.
+
+Ziel des Projekts ist es, **Kapazitäten und Engpässe im Team transparent zu machen**, **SLA-Risiken frühzeitig zu erkennen** und dem Management eine Grundlage für **datenbasierte Entscheidungen** über Ressourceneinsatz, Priorisierung und Prozessoptimierung zu liefern.
+
+Langfristig soll die in diesem Projekt entwickelte Struktur als **Blaupause** dienen, die auf weitere MSP- und Recruiting-Setups – für andere Kunden und Teams – **übertragen und wiederverwendet** werden kann.
 
 ---
 
@@ -400,18 +403,18 @@ Auf einen Blick ist sichtbar, wer unterstützen kann, wer normal ausgelastet ist
 
 ## Executive Summary
 
-Das Workforce Operations & Team Dashboard zeigt deutliche strukturelle Muster im MSP-Team:
+Das Workforce Operations & Team Dashboard zeigt deutliche strukturelle Muster im MSP-Team – auf Basis der für dieses Portfolio **anonymisierten** operativen Daten:
 
 1. **Workload & Fälle**  
    - Anfragen, Aufträge und Verlängerungen sind **ungleich auf Consultants verteilt**; einzelne Teammitglieder tragen signifikant mehr Last als andere.  
 
 2. **Zeitaufwand & Workstreams**  
-   - Ein großer Anteil der Arbeitszeit fließt in **Administrative Support**, während zentrale, wertschöpfende Tätigkeiten wie Talent-Shortlisting oder Client-Relationship weniger Zeitanteile einnehmen.
+   - Ein großer Anteil der Arbeitszeit fließt in **Administrative Support**, während zentrale, wertschöpfende Tätigkeiten wie Talent-Shortlisting oder Client-Relationship einen geringeren Zeitanteil einnehmen.
 
 3. **Skills & Team-Stimmung**  
    - Skills im VMS konzentrieren sich auf wenige Kernkompetenzen (z. B. Projektmanagement, Sprachen, Agile Methoden), während das Mood Board zeigt, dass **Phasen hoher Auslastung** klar mit „I need support“-Signalen korrespondieren.
 
-Diese Ergebnisse machen deutlich, dass **Kapazitätssteuerung, Prozessvereinfachung und gezielte Nutzung von Skills und Stimmungssignalen** entscheidend sind, um Überlastung zu vermeiden und SLA-konform zu arbeiten.
+Diese Ergebnisse machen deutlich, dass **Kapazitätssteuerung, Prozessvereinfachung und gezielte Nutzung von Skills- und Stimmungssignalen** entscheidend sind, um Überlastung zu vermeiden und SLA-konform zu arbeiten.
 
 ---
 
@@ -420,90 +423,86 @@ Diese Ergebnisse machen deutlich, dass **Kapazitätssteuerung, Prozessvereinfach
 ### Kategorie 1: Anfrage-Pipeline & Team-Workload (Workload 1)
 
 **Insight 1:** Einzelne Geschäftsbereiche generieren einen überproportional hohen Anteil an offenen Anfragen, während andere Bereiche vergleichsweise wenig Volumen erzeugen.  
-Das ermöglicht eine gezieltere Spezialisierung und Kapazitätsplanung je Consultant.
+→ Das ermöglicht eine gezieltere Spezialisierung und Kapazitätsplanung je Consultant.
 
 **Insight 2:** Die Zahl aktiver Anfragen ist **stark zwischen den Consultants verteilt** – einige bearbeiten ein Vielfaches der Anfragen anderer.  
-Hier liegt ein direkter Hebel für **Workload-Balancing und Priorisierung**.
+→ Hier liegt ein direkter Hebel für **Workload-Balancing und Priorisierung**.
 
 **Insight 3:** KPI-Kacheln wie „Aktive Anfragen“, „SL heute“ und „Reaktionszeit gefährdet (KPI)“ zeigen tagesaktuell, wo **SLA-Risiken** entstehen.  
-Das Team kann frühzeitig eingreifen, statt nur auf Eskalationen zu reagieren.
+→ Das Team kann frühzeitig eingreifen, statt nur auf Eskalationen zu reagieren.
 
 **Insight 4:** Die Statusverteilung (z. B. in Genehmigung, kommerziell geprüft, verlängert bestätigt) macht Prozessschritte sichtbar, in denen Fälle „hängen bleiben“.  
-Diese Engpässe sind Ansatzpunkte für **Prozessanpassungen oder bessere Abstimmung mit dem Kunden**.
+→ Diese Engpässe sind Ansatzpunkte für **Prozessanpassungen oder bessere Abstimmung mit dem Kunden**.
 
 ---
 
 ### Kategorie 2: Aufträge & Verlängerungen (Workload 2 & 3)
 
 **Insight 1:** Die **Anzahl aktiver Aufträge** ist ebenfalls ungleich auf Consultants verteilt – mit Spitzenwerten von knapp 300 Aufträgen bei einzelnen Personen.  
-Ein klarer Hinweis auf die Notwendigkeit regulatorischer Workload-Grenzen und Verteilung.
+→ Ein klarer Hinweis auf die Notwendigkeit klar definierter **Workload-Grenzen und Umverteilung**.
 
 **Insight 2:** Die Mischung aus **Vertragstypen (T&M vs. AO)** je Consultant zeigt, dass nicht nur die Anzahl der Aufträge, sondern auch deren Komplexität und wirtschaftliche Bedeutung variiert.  
-Relevant für **strategische Steuerung** und **Risikobewertung**.
+→ Relevant für **strategische Steuerung** und **Risikobewertung**.
 
 **Insight 3:** Die Auswertung der **Verlängerungen nach Status** (MSP-Nachverhandlung, Lieferanten-Nachverhandlung, bestätigt) macht sichtbar, wo Verlängerungen ins Stocken geraten.  
-Das unterstützt die **Forecast-Planung** und gezielte Eskalation.
+→ Das unterstützt die **Forecast-Planung** und gezielte Eskalation.
 
-**Insight 4:** Durch die Kombination von Requests (Workload 1), Assignments (Workload 2) und Extensions (Workload 3) entsteht eine **End-to-End Sicht vom Eingang bis zur Verlängerung**.  
-Diese Sicht ist entscheidend, um **Bottlenecks im Gesamtprozess** zu erkennen.
+**Insight 4:** Durch die Kombination von Requests (Workload 1), Assignments (Workload 2) und Extensions (Workload 3) entsteht eine **End-to-End-Sicht vom Eingang bis zur Verlängerung**.  
+→ Diese Sicht ist entscheidend, um **Bottlenecks im Gesamtprozess** zu erkennen.
 
 ---
 
 ### Kategorie 3: Zeitaufwand nach Workstreams (Clockify)
 
 **Insight 1:** „Administrative Support“ nimmt mit Abstand den größten Anteil der Wochenarbeitszeit ein (z. B. >100 Stunden).  
-Darin steckt erhebliches **Automatisierungs- und Standardisierungspotenzial**.
+→ Darin steckt erhebliches **Automatisierungs- und Standardisierungspotenzial**.
 
 **Insight 2:** Kommunikation („Team Communication & Collaboration“, „Client Communication & Relationship Management“) bindet einen großen Zeitblock, ist aber meist wenig transparent dokumentiert.  
-Hier helfen klare Kommunikationsregeln und strukturierte Zeitfenster.
+→ Hier helfen klare Kommunikationsregeln und strukturierte Zeitfenster.
 
 **Insight 3:** Wertschöpfende Tätigkeiten wie „Talent Shortlist Creation & Presentation“ konkurrieren zeitlich mit Reporting- und Systemaufgaben.  
-Diese Erkenntnis unterstützt die **Neuverteilung von Aufgaben** (z. B. Admin-Support vs. beratende Rolle).
+→ Diese Erkenntnis unterstützt die **Neuverteilung von Aufgaben** (z. B. Admin-Support vs. beratende Rolle).
 
 **Insight 4:** Der Workstream „Personal Learning & Growth“ macht sichtbar, ob und in welchem Umfang **Weiterbildung** im Alltag stattfindet.  
-Das ist besonders relevant für Skill-Aufbau und langfristige Team-Performance.
+→ Das ist besonders relevant für Skill-Aufbau und langfristige Team-Performance.
 
 ---
 
 ### Kategorie 4: Skills, Team-Stimmung & Risikoindikatoren
 
 **Insight 1:** Die „Skills in VMS nach Häufigkeit“ zeigen, dass bestimmte Kompetenzen (z. B. Projektmanagement, Sprachen, Data Analysis, SAP, Agile Methoden) besonders ausgeprägt sind.  
-Das erleichtert **Matching, Projektbesetzung** und die Planung zukünftiger Rekrutierungen.
+→ Das erleichtert **Matching, Projektbesetzung** und die Planung zukünftiger Rekrutierungen.
 
 **Insight 2:** Python-basierte Aggregationen stellen sicher, dass Skill- und Marktdaten (z. B. Aktienkurs) **aktuell und konsistent** vorliegen, ohne dass das Team sie manuell pflegen muss.  
-Das reduziert **Fehleranfälligkeit und Pflegeaufwand**.
+→ Das reduziert **Fehleranfälligkeit und Pflegeaufwand**.
 
 **Insight 3:** Das Mood Board verbindet Kennzahlen mit **menschlicher Perspektive**: Überlastung („I need support“) und freie Kapazität („I can support“) werden sichtbar.  
-Dieses Instrument unterstützt **frühes Gegensteuern**, bevor es zu Burnout oder Fehlerhäufungen kommt.
+→ Dieses Instrument unterstützt **frühes Gegensteuern**, bevor es zu Burnout oder Fehlerhäufungen kommt.
 
 **Insight 4:** In der Kombination von Workload, Zeitaufwand, Skills und Stimmung entsteht ein **ganzheitliches Bild der Teamgesundheit** – weit über klassische KPI-Berichte hinaus.  
-Das stärkt **nachhaltige Performance** statt reiner Output-Optimierung.
+→ Das stärkt **nachhaltige Performance** statt reiner Output-Optimierung.
 
 ---
 
 ## Empfehlungen
 
-Basierend auf den Analyseergebnissen sollte das MSP- und Operations-Team folgende Maßnahmen in Betracht ziehen:
+Basierend auf den Analyseergebnissen sollte das MSP- und Operations-Team in erster Linie folgende Maßnahmen in Betracht ziehen:
 
 1. **Einführung eines strukturierten Workload-Balancing-Prozesses**  
    - Regelmäßiges Review von Workload 1–3  
-   - Definition von Zielkorridoren pro Consultant (maximale Anzahl aktiver Fälle).
+   - Definition von Zielkorridoren pro Consultant (maximale Anzahl aktiver Fälle).  
+   - **Umgesetzt:**  
+     - Einführung eines festen Team-Rituals: *Workload-Review zweimal pro Woche*, in Peak-Phasen *täglich am Morgen*.  
+     - Transparente Abstimmung: „Wer braucht Support, wer kann Support geben?“ als fixer Agenda-Punkt im Teammeeting.  
+     - Einbindung von Workload- und Zeitdaten als **Frühwarnsystem** zur Erkennung von Überlast und SLA-Gefährdung.  
+     - Ziel der Sessions: Überblick über **aktuelle Anfragen, offene Aufträge, verfügbare Kapazitäten**, geplante Abwesenheiten sowie die operative Planung für den aktuellen Tag und die folgenden 2–3 Tage.
 
 2. **Reduktion administrativer Last durch Automatisierung**  
-   - Standardisierung von Workflows und Vorlagen  
-   - Verlagerung wiederkehrender manueller Tätigkeiten in automatisierte Prozesse (z. B. Reports, Statusupdates).
-
-3. **Fokussierung der Kommunikationswege**  
-   - Klar definierte Kanäle für Kund:innen, Suppliers und interne Abstimmung  
-   - Reduktion ad-hoc Kommunikation zugunsten strukturierter Formate.
-
-4. **Strategische Nutzung von Skills-Daten**  
-   - Abgleich von Nachfrage vs. vorhandenen Skills  
-   - Planung von Trainings, Cross-Skilling und gezieltem Recruiting.
-
-5. **Systematische Nutzung des Mood Boards**  
-   - Fixer Agendapunkt in Team-Meetings („Wer braucht Support, wer kann Support geben?“)  
-   - Verknüpfung mit Workload- und Zeitdaten als Frühwarnsystem.
+   - Standardisierung von Workflows und Vorlagen.  
+   - Verlagerung repetitiver manueller Tätigkeiten in automatisierte Prozesse (z. B. Reports, Statusupdates).  
+   - **Status / Strategie:**  
+     - Für die Jahre **2025 & 2026** wurde eine organisationsweite Zielsetzung formuliert, die administrative Last um **15 % zu reduzieren**.  
+     - Das Dashboard dient als Grundlage, um Automatisierungspotenziale zu identifizieren (z. B. wiederkehrende Statusmeldungen, manuelle Export-/Import-Prozesse, Reportings).
 
 ---
 
@@ -515,15 +514,11 @@ Zur Sicherstellung einer klaren analytischen Grundlage wurden folgende Annahmen 
 - Die Kategorisierung von Workstreams in Clockify setzt voraus, dass Teammitglieder ihre Zeiten **konsequent und korrekt** buchen.  
 - Einzelne Statusfelder und Bezeichnungen im VMS sind nicht vollständig standardisiert; wo sinnvoll, wurden sie **vereinheitlicht oder gruppiert**.  
 - Skill-Daten spiegeln die im VMS gepflegte Realität wider und können von tatsächlichen Fähigkeiten leicht abweichen (Pflegequalität).  
-- Die im Dashboard gezeigten Kennzahlen sind für dieses Portfolio-Beispiel **teilweise anonymisiert bzw. aggregiert**, um Vertraulichkeit zu gewährleisten.
+- Die im Dashboard gezeigten Kennzahlen sind für dieses Portfolio-Beispiel **anonymisiert bzw. aggregiert**, um Vertraulichkeit zu gewährleisten. Kundennamen, Personennamen und weitere identifizierende Merkmale werden nicht angezeigt.
 
 ---
 
 ## Weitere Ressourcen
 
 - SmartSheet-Dashboard (Screenshots): im Ordner `screenshots/`  
-- Python-Skripte zur Skill- und Kursaggregation: im Ordner `python/`  
-- Dokumentation zur Datenzuordnung HR4YOU → SmartSheet: im Ordner `smartsheet/`  
-- Beispiel-Layouts und Mappings: siehe `mapping_hr4you_to_smartsheet.md`
-
-
+- Python-Skripte zur Skill- und Kursaggregation: im Ordner `python/`
