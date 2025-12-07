@@ -2,9 +2,11 @@
 
 
 Willkommen!  
-Dieses Repository dokumentiert ein End-to-End-Projekt im Bereich Workforce Operations & People Analytics, das ich im Rahmen eines MSP-Programms für ein deutsches Telekommunikationsunternehmen im Q2 2025 umgesetzt habe.Ziel war es, ein **zentrales SmartSheet-Dashboard** aufzubauen, das Anfragen, Aufträge, Verlängerungen, Workload, Zeitaufwand, Skills und Team-Stimmung für ein **nicht-technisches Team aus 5 MSP Consultants, 1 Operations Manager und 1 Account Director** sichtbar macht.
+Dieses Repository dokumentiert ein End-to-End-Projekt im Bereich **Workforce Operations & People Analytics**, das ich im Rahmen eines MSP-Programms für ein deutsches Telekommunikationsunternehmen im Q2 2025 umgesetzt habe. Ziel war es, ein **zentrales SmartSheet-Dashboard** aufzubauen, das Anfragen, Aufträge, Verlängerungen, Workload, Zeitaufwand, Skills und Team-Stimmung für ein **nicht-technisches Team aus 5 MSP Consultants, 1 Operations Manager und 1 Account Director** sichtbar macht.
 
-Ziel des Projekts ist es, **Kapazitäten und Engpässe im Team transparent zu machen**, **SLA-Risiken frühzeitig zu erkennen** und dem Management eine Grundlage für **datenbasierte Entscheidungen** über Ressourceneinsatz, Priorisierung und Prozessoptimierung zu liefern.
+Ziel des Projekts ist es, **Kapazitäten und Engpässe im Team transparent zu machen**, **SLA-Risiken frühzeitig zu erkennen** und dem Management eine Grundlage für **datenbasierte Entscheidungen** über Ressourceneinsatz, Priorisierung und Prozessoptimierung zu liefern.  
+Langfristig soll die in diesem Projekt entwickelte Struktur als **Blaupause** dienen, die auf weitere MSP- und Recruiting-Setups – für andere Kunden und Teams – übertragen und dort wiederverwendet werden kann.
+
 
 ---
 
@@ -17,7 +19,7 @@ Das **Workforce Operations & Team Dashboard** bündelt mehrere bisher getrennte 
 - **Clockify-Workstreams**: wöchentlicher Zeitaufwand nach Tätigkeitsbereichen (z. B. Administrative Support, Client Communication, Talent Shortlisting)  
 - **Skills in VMS**: Häufigkeit von Primär-Skills (z. B. Projektmanagement, Data Analysis, SAP, Sprachkenntnisse)  
 - **Mood Board**: visuelle Darstellung der Team-Stimmung und Unterstützungskapazität („I can support“, „I need support“, „Urlaub“)  
-- **Aktienkurs-Widget**: kleines, Python-basiertes Element, das den Aktienkurs des Kunden inkl. Veränderung der letzten 3 Monate anzeigt
+- **Aktienkurs-Widget**: kleines, Python-basiertes Element, das den Aktienkurs von Randstad inkl. Veränderung der letzten 3 Monate anzeigt
 
 Das Dashboard ist so gestaltet, dass **nicht-technische Nutzer:innen** ohne Data- oder IT-Kenntnisse erkennen können: *Wer arbeitet woran, wie stark ist das Team belastet, und wo brennt es?*
 
@@ -65,7 +67,7 @@ Dieses Dashboard ermöglicht Führungskräften, **Kapazitätsengpässe, Prozessf
 
 **SmartSheet**  
 - Zentrales Frontend für alle Dashboards  
-- Nutzung von Berichten, Formeln, Summary-Feldern, cross-sheet references und grafischen Elementen (Charts, Kacheln, Boards)
+- Nutzung von Berichten, Formeln, Summary-Feldern, Cross-Sheet-Referenzen, grafischen Elementen (Charts, Kacheln, Boards) sowie automatisierten Uploads/Imports von Excel-Sheets
 
 **Excel & HR4YOU (VMS)**  
 - Regelmäßige Exporte aus dem VMS für:
@@ -81,9 +83,8 @@ Dieses Dashboard ermöglicht Führungskräften, **Kapazitätsengpässe, Prozessf
 - Übergabe der bereinigten Daten an SmartSheet, damit das Zeitaufwands-Diagramm ohne manuelle Exporte aktuell bleibt
 
 **Python**  
-- Skript zur Aggregation der **VMS-Skills** (Zählung und Sortierung nach Häufigkeit)  
-- Skript zur Aktualisierung des **Aktienkurs-Widgets** (aktueller Kurs + 3-Monats-Veränderung)  
-- Export der Ergebnisse in ein Format, das direkt in SmartSheet eingelesen werden kann (z. B. CSV/Excel)
+- Skript zur Aktualisierung des **Aktienkurs-Widgets** (aktueller Kurs + 3-Monats-Veränderung)
+- Skills in VMS (Häufigkeitstabelle) 
 
 ---
 
@@ -93,7 +94,7 @@ Im Rahmen des Projekts habe ich ein **ganzheitliches Reporting- und Operations-S
 
 ### Datenaufnahme (HR4YOU + Clockify + Python)
 
-- Exporte aus **HR4YOU** für:
+- Exporte aus VMS **HR4YOU** für:
   - Anfragen (Requests) inkl. Statusverlauf  
   - Aufträge (Assignments) inkl. Vertragstyp  
   - Verlängerungen inkl. Verhandlungsstatus (MSP vs. Lieferant)  
@@ -181,11 +182,11 @@ ist so angelegt, dass:
 
 Dieses Projekt zeigt, wie sich mit **SmartSheet + API + Python** ein sehr praxisnahes, operatives **People- & Workforce-Analytics-System** aufbauen lässt, das non-technischen Stakeholdern täglich hilft, bessere Entscheidungen zu treffen.
 
-#Mehr Infos:
+# Mehr Infos:
 
 ## Projekt-Hintergrund
 
-Dieses Projekt entstand im Rahmen eines **MSP-Programms** für einen Großkunden, in dem ein Team aus **5 MSP Consultants, 1 Operations Manager und 1 Account Director** täglich eine hohe Anzahl an Anfragen, Aufträgen und Verlängerungen steuert.
+Dieses Projekt entstand im Rahmen eines **MSP-Programms** für einen Großkunden in Telco, in dem ein Team aus **5 MSP Consultants, 1 Operations Manager und 1 Account Director** täglich eine hohe Anzahl an Anfragen, Aufträgen und Verlängerungen steuert.
 
 Die operative Realität war geprägt von:
 
@@ -234,7 +235,7 @@ Bei den ersten Prüfungen wurden u. a. folgende Schritte durchgeführt:
 
 ## Datenquellen & Datenmodell
 
-### Team Dashboard – Requests (Workload 1)
+### Team Dashboard
 
 Zentrales **Team-Dashboard**:
 
@@ -256,7 +257,8 @@ Damit bildet dieser Screen die **operative Gesamtsicht auf alle aktiven Requests
 *<img width="2240" height="1061" alt="Schenlllinks : KPIS" src="https://github.com/user-attachments/assets/b5d45ecd-a744-4dcc-b714-784af87e4c02" />*
 
 
-*
+---
+
 
 ### Anfragen
 
@@ -280,7 +282,29 @@ Die Tabelle enthält u. a.:
 
 ---
 
-### extensions (Workload 3 – Verlängerungen)
+### Aufträge
+
+Dieser Screenshot zeigt zwei Visualisierungen auf Basis der Tabelle `assignments` mit allen **aktiven Aufträgen** im MSP-Programm.  
+Die Tabelle enthält u. a.:
+
+- Assignment / Auftrags-ID  
+- zuständige:r Consultant  
+- Vertragstyp (z. B. T&M, AÜ)  
+- relevante Datumsfelder (Start-/Enddatum, Verlängerungsdatum)
+
+**Links** visualisiert das Halbkreis-Diagramm **„Auftragsverteilung nach Disponent:in“** die Gesamtzahl der aktiven Aufträge je Consultant.  
+→ Auf einen Blick erkennbar: Welche Consultants aktuell das größte Auftragsvolumen tragen.
+
+**Rechts** zeigt das Balkendiagramm **„Anzahl Aufträge nach Vertragstyp (Workload 2)“** die Anzahl aktiver Aufträge pro Consultant, aufgeschlüsselt nach Vertragstyp (*T&M* vs. *AÜ*).  
+→ Damit lässt sich sowohl das **Gesamtvolumen je Consultant** als auch die **vertragliche Struktur** der betreuten Aufträge vergleichen.
+
+*<img width="2240" height="414" alt="Bildschirmfoto 2025-10-30 um 19 50 51" src="https://github.com/user-attachments/assets/0d6448f5-ae90-4451-8620-fed373dbe8be" />*
+
+
+---
+
+
+### Verlängerungen
 
 Tabelle mit allen **Verlängerungsfällen** im VMS-System. Enthält u. a.:
 
@@ -298,7 +322,7 @@ Diese Tabelle ist mit `assignments` verknüpft und speist das Diagramm
 
 ---
 
-### clockify_workstreams (Zeitaufwand nach Workstreams)
+### Zeiterfassung aus Clockify
 
 Aggregierte Tabelle aus der **Clockify API**, mit:
 
@@ -317,36 +341,55 @@ Diese Daten bilden die Grundlage für:
 
 ---
 
-### vms_skills (Skills in VMS)
 
-Durch ein Python-Skript aufbereitete Tabelle mit:
+### Skills in VMS & Aktienkurs-Widget
 
-- `Primary` – Name des Primär-Skills  
-- `Häufigkeit` – wie oft dieser Skill im VMS vorkommt  
+Der Screenshot zeigt zwei Python-gestützte Elemente: links ein kleines **Aktienkurs-Dashboard**, rechts die Tabelle **„Skills in VMS nach Häufigkeit“**.
 
-Beispiele: Projektmanagement, Englisch, Deutsch, Agile Methodologie, Data Analysis, SAP Applications, Scrum usw.
+**Skills in VMS**
 
-Diese Tabelle fließt in:
+Durch ein Python-Skript aufbereitete Tabelle auf Basis eines HR4YOU-Exports mit:
 
-- „Skills in VMS nach Häufigkeit“ (Ranking der wichtigsten Kompetenzen).
+- **Primary** – Name des Primär-Skills  
+- **Häufigkeit** – wie oft dieser Skill im VMS vorkommt  
+
+Beispiele: Projektmanagement, Englisch, Deutsch, Agile Methodologie, Stakeholder Management, Data Analysis, SAP Applications, Scrum usw.  
+
+Diese Tabelle fließt in die Visualisierung **„Skills in VMS nach Häufigkeit“** und zeigt ein Ranking der am häufigsten nachgefragten Kompetenzen im MSP-Setup.
+
+**Aktienkurs-Widget**
+
+Links wird ein kompaktes **Aktienkurs-Dashboard** angezeigt, das per Python-Skript (yfinance + Smartsheet SDK) aktualisiert wird und folgende Kennzahlen ausgibt:
+
+- aktuellen Aktienkurs  
+- Datum des letzten Updates  
+- prozentuale 3-Monats-Veränderung  
+
+Beide Elemente werden regelmäßig automatisiert aktualisiert und direkt im SmartSheet-Dashboard dargestellt.
+
 
 *<img width="2240" height="618" alt="Bildschirmfoto 2025-10-30 um 19 52 18" src="https://github.com/user-attachments/assets/aa00125e-9b2d-4f6f-be8c-9b4015a55520" />*
 
 
 ---
 
-### mood_board_state (Team-Stimmung & Verfügbarkeit)
+### Mood Board (Team-Stimmung & Verfügbarkeit)
 
 Qualitative Ergänzung mit:
 
 - Teammitglied / Rolle  
 - aktueller Status:
-  - „I can support!“  
-  - „All is good!“  
-  - „I need support!“  
-  - „Urlaub“  
+  - „I can support!“ 
+  - „All is good!“
+  - „I need support!“ 
+  - „Urlaub“ 
 
-Diese Informationen werden im **Mood Board** visuell dargestellt und in Meetings genutzt, um Überlastung und Unterstützungsbedarf zu erkennen.
+Das **Mood Board** ist in SmartSheet so aufgebaut, dass jede:r Consultant ein eigenes Avatar-Foto hat.  
+Vor Team- oder Weekly-Meetings ziehen die Teammitglieder ihr Bild per Drag & Drop in die Zeile, die ihrem aktuellen Status entspricht.  
+
+Dadurch entsteht ein **interaktives Stimmungs- und Verfügbarkeits-Tool**:  
+Auf einen Blick ist sichtbar, wer unterstützen kann, wer normal ausgelastet ist, wer Überlastung signalisiert und wer abwesend (Urlaub) ist. Diese Information wird im Meeting aktiv genutzt, um **Überlastung früh zu erkennen und Support im Team zu organisieren**.
+
 
 *<img width="2240" height="788" alt="Bildschirmfoto 2025-10-30 um 20 02 58" src="https://github.com/user-attachments/assets/18975c32-9e65-488d-b04c-5bad66d6d603" />*
 
