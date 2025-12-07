@@ -1,4 +1,5 @@
-*![CNG-Resized](https://github.com/user-attachments/assets/2b6c7368-813d-4569-ab97-ad32c3304c0e)*
+
+*![smartsheet-logo-1260x709](https://github.com/user-attachments/assets/3b2172a3-6190-49d7-bcde-59361a2a684f)*
 
 
 Willkommen!  
