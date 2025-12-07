@@ -298,7 +298,8 @@ Die Tabelle enthält u. a.:
 **Rechts** zeigt das Balkendiagramm **„Anzahl Aufträge nach Vertragstyp (Workload 2)“** die Anzahl aktiver Aufträge pro Consultant, aufgeschlüsselt nach Vertragstyp (*T&M* vs. *AÜ*).  
 → Damit lässt sich sowohl das **Gesamtvolumen je Consultant** als auch die **vertragliche Struktur** der betreuten Aufträge vergleichen.
 
-*<img width="2240" height="414" alt="Bildschirmfoto 2025-10-30 um 19 50 51" src="https://github.com/user-attachments/assets/0d6448f5-ae90-4451-8620-fed373dbe8be" />*
+*<img width="2201" height="477" alt="Aufträge" src="https://github.com/user-attachments/assets/78d1eaec-63c8-4883-9ea1-a858d8f9ad18" />*
+
 
 
 ---
