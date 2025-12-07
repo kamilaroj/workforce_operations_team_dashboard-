@@ -180,12 +180,8 @@ ist so angelegt, dass:
 - eine zukünftige direkte Schnittstelle zu HR4YOU (z. B. via API) in die bestehende Struktur integrierbar wäre.
 
 Dieses Projekt zeigt, wie sich mit **SmartSheet + API + Python** ein sehr praxisnahes, operatives **People- & Workforce-Analytics-System** aufbauen lässt, das non-technischen Stakeholdern täglich hilft, bessere Entscheidungen zu treffen.
-```
-Perfekt, dann kommt jetzt der **„Mehr Infos“-Block** für dein SmartSheet-Projekt – im gleichen Stil wie bei deinem Flight-Punctuality-Projekt, aber inhaltlich auf **Workforce Operations & Team Dashboard** angepasst.
-Du kannst das direkt unter deine Einleitung ins README kleben.
 
-```markdown
-Mehr Infos:
+#Mehr Infos:
 
 ## Projekt-Hintergrund
 
@@ -238,56 +234,67 @@ Bei den ersten Prüfungen wurden u. a. folgende Schritte durchgeführt:
 
 ## Datenquellen & Datenmodell
 
-### requests (Workload 1 – Requests & Pipeline)
+### Team Dashboard – Requests (Workload 1)
 
-Zentrale Tabelle mit allen **aktiven Anfragen (Requests)** im MSP-Programm. Enthält u. a.:
+Zentrales **Team-Dashboard**:
+
+- **Oben rechts** werden aus der `requests`-Tabelle aggregierte **Team-KPIs** angezeigt:  
+  - *Aktive Anfragen* (z. B. 36)  
+  - *SL heute* – Anzahl der Anfragen, für die **heute** eine Shortlist erstellt werden muss  
+  - *Anfragen heute* und *Anfragen gestern* – Anzahl neu eingegangener Anfragen am jeweiligen Tag  
+  - *Reaktionszeit gefährdet (KPI)* – Anzahl der Anfragen, deren Alter zwischen 18 und 24 Stunden liegt und damit kurz vor Überschreitung der definierten Reaktionszeit von 24 Stunden steht.  
+
+- **Darunter** visualisiert das Balkendiagramm **„Team Metrics“** die Verteilung der Anfragen im aktuellen Kalenderjahr nach Prozessstatus  
+  (z. B. in Genehmigung, kommerzielle Prüfung, Rückmeldung, Sourcing, Vertragserstellung, Verlängerung etc.),  
+  basierend auf Feldern wie *aktueller Prozessstatus*, *Erfassungsdatum* und *Änderungsdatum* aus `requests`.
+
+- **Links** ergänzen **Schnelllinks** (VMS, Clockify, Datenqualität, Mood & Workload etc.) sowie wichtige E-Mail-Adressen,  
+  damit das Team direkt aus dem Dashboard in die relevanten Systeme springen kann.
+
+Damit bildet dieser Screen die **operative Gesamtsicht auf alle aktiven Requests**, ihre Statusverteilung und die wichtigsten tagesaktuellen KPIs.
+
+*<img width="2240" height="1061" alt="Schenlllinks : KPIS" src="https://github.com/user-attachments/assets/b5d45ecd-a744-4dcc-b714-784af87e4c02" />*
+
+
+*
+
+### Anfragen
+
+Dieser Screenshot zeigt zwei Visualisierungen auf Basis der Tabelle `requests` mit allen **aktiven Anfragen (Requests)** im MSP-Programm.  
+Die Tabelle enthält u. a.:
 
 - Request ID  
 - Geschäftsbereich / Fachbereich  
 - zuständige:r Consultant  
-- Anfrage-Typ (z. B. Ausschreibung, direkte Beauftragung, Pre-named)  
-- aktueller Prozessstatus (z. B. in Genehmigung, kommerziell geprüft, reaktiviert, verlängert bestätigt)  
-- Erfassungs- und Änderungsdatum  
+- Anfrage-Typ (z. B. Ausschreibung, direkte Beauftragung, Pre-named)
 
-Diese Tabelle bildet die Basis für:
+**Links** visualisiert das Halbkreis-Diagramm **„Offene Anfragen nach Geschäftsbereich“** den prozentualen Anteil der aktiven Anfragen je Geschäftsbereich (Bereich 1–7).  
+→ Auf einen Blick erkennbar: Welche Bereiche erzeugen den größten Nachfrageanteil und wo die Schwerpunkte im Team liegen.
 
-- „Offene Anfragen nach Geschäftsbereich“  
-- „Aktive Anfragen je Consultant“ (Workload 1)  
-- Team-KPIs im Dashboard (aktive Anfragen, SL heute, Anfragen heute/gestern, Reaktionszeit gefährdet).
+**Rechts** zeigt das Balkendiagramm **„Aktive Anfragen Team (Workload 1)“** die Anzahl aktiver Anfragen je Consultant, aufgeschlüsselt nach Anfrage-Typ  
+(*Ausschreibung*, *Direkte Beauftragung*, *Pre-named (Ausnahme)*).  
+→ Damit lässt sich sowohl die **Gesamt-Workload pro Consultant** als auch die **Qualitäts-/Komplexitätsstruktur** der Anfragen vergleichen.
 
----
+*<img width="2240" height="414" alt="Bildschirmfoto 2025-10-30 um 19 50 51" src="https://github.com/user-attachments/assets/0d6448f5-ae90-4451-8620-fed373dbe8be" />*
 
-### assignments (Workload 2 – Aufträge)
-
-Tabelle mit allen **aktiven Aufträgen (Assignments)** im Programm. Enthält u. a.:
-
-- Assignment / Auftrag ID  
-- zuständige:r Consultant  
-- Vertragstyp (z. B. T&M, AO)  
-- Anzahl aktiver Aufträge je Consultant  
-
-Diese Tabelle ist verknüpft mit `requests` über Fall- oder Requisitions-IDs (je nach Prozess) und fließt in:
-
-- „Auftragsverteilung nach Disponent:in“  
-- „Anzahl Aufträge nach Vertragstyp (Workload 2)“.
 
 ---
 
 ### extensions (Workload 3 – Verlängerungen)
 
-Tabelle mit allen **Verlängerungsfällen**. Enthält u. a.:
+Tabelle mit allen **Verlängerungsfällen** im VMS-System. Enthält u. a.:
 
-- Assignment / Auftrag ID  
+- Anzahl aktiver Verlängerungen  
 - zuständige:r Consultant  
-- Verlängerungsstatus  
-  - Nachverhandlung (MSP)  
-  - Nachverhandlung (Lieferant)  
-  - Bestätigt / abgelehnt  
+- Verlängerungsstatus, z. B.:  
+  - **Nachverhandlung (MSP)** – zeigt Handlungsbedarf im MSP-Team  
+  - **Nachverhandlung (Lieferant)** – zeigt Handlungsbedarf auf Lieferantenseite  
 
-Diese Tabelle ist mit `assignments` verknüpft und speist:
+Diese Tabelle ist mit `assignments` verknüpft und speist das Diagramm  
+**„Aktive Verlängerungen nach Status (Workload 3)”**, in dem pro Consultant die Anzahl der Verlängerungen nach Status (MSP vs. Lieferant) als gestapelte Balken dargestellt wird.
 
-- „Aktive Verlängerungen nach Status (Workload 3)“  
-- Kennzahlen zu kritischen Verlängerungen (z. B. in Verhandlung, drohender Ablauf).
+*<img width="2185" height="379" alt="Verlängerungen" src="https://github.com/user-attachments/assets/5d925d38-240e-4b4f-bea3-4c0573d5c4b9" />*
+
 
 ---
 
@@ -305,6 +312,9 @@ Diese Daten bilden die Grundlage für:
 - „Wöchentlicher Zeitaufwand nach Workstreams“  
 - Abgrenzung von administrativen vs. wertschöpfenden Tätigkeiten.
 
+*<img width="2240" height="676" alt="Bildschirmfoto 2025-10-30 um 19 51 44" src="https://github.com/user-attachments/assets/15fa66d9-3567-4787-a0bc-90c0d7981641" />*
+
+
 ---
 
 ### vms_skills (Skills in VMS)
@@ -320,6 +330,9 @@ Diese Tabelle fließt in:
 
 - „Skills in VMS nach Häufigkeit“ (Ranking der wichtigsten Kompetenzen).
 
+*<img width="2240" height="618" alt="Bildschirmfoto 2025-10-30 um 19 52 18" src="https://github.com/user-attachments/assets/aa00125e-9b2d-4f6f-be8c-9b4015a55520" />*
+
+
 ---
 
 ### mood_board_state (Team-Stimmung & Verfügbarkeit)
@@ -334,6 +347,9 @@ Qualitative Ergänzung mit:
   - „Urlaub“  
 
 Diese Informationen werden im **Mood Board** visuell dargestellt und in Meetings genutzt, um Überlastung und Unterstützungsbedarf zu erkennen.
+
+*<img width="2240" height="788" alt="Bildschirmfoto 2025-10-30 um 20 02 58" src="https://github.com/user-attachments/assets/18975c32-9e65-488d-b04c-5bad66d6d603" />*
+
 
 ---
 
