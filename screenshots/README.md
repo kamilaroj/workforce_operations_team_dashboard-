@@ -1,0 +1,1 @@
+# Screenshots – SmartSheet Workforce Dashboard
